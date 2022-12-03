@@ -18,7 +18,6 @@ global.app = {
   plugins: plugins,
 }
 
-
 // Наблюдатель
 
 const watcher = () => {
