@@ -2,11 +2,59 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Title</title>
+  <title>Device</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-Hello word!!!
+<body class="page__body">
+<header class="main-header">
+  <div class="main-header__logo logo">
+    <img class="logo__image" src="" alt="Логотип device">
+  </div>
+  <div class="main-header__wrapper">
+    <div class="main-header__search">
+      <form class="search__form">
+        <input class="search__input" type="text">
+        <button class="search__button">Найти</button>
+      </form>
+    </div>
+    <div class="main-header__user-menu user-menu">
+      <ul class="user-menu__list">
+        <li class="user-menu__item">Войти</li>
+        <li class="user-menu__item">Сравнить</li>
+        <li class="user-menu__item">Корзина</li>
+      </ul>
+    </div>
+  </div>
+  <nav class="main-header__nav nav">
+    <ul class="nav__list">
+      <li class="nav__item">
+        <span class="nav__button">Каталог товаров
+          <span class="nav__button-toggle">
+            <span class="visually-hidden">Переключатель выпадающего меню</span>
+          </span>
+        </span>
+        <div class="nav__drop-menu drop-menu">
+          <ul class="drop-menu__list">
+            <li class="drop-menu__item">Моноподы для cелфи</li>
+            <li class="drop-menu__item">Виртуальная реальность</li>
+            <li class="drop-menu__item">Экшн-камеры</li>
+          </ul>
+          <ul class="drop-menu__list">
+            <li class="drop-menu__item">Фитнес-браслеты</li>
+            <li class="drop-menu__item">Умные часы</li>
+          </ul>
+          <ul class="drop-menu__list">
+            <li class="drop-menu__item">Квадрокоптеры</li>
+          </ul>
+        </div>
+      </li>
+      <li class="nav__item">
+        <a class="nav__button" href="#">Доставка</a>
+      </li>
+    </ul>
+  </nav>
+
+</header>
 <script src="js/main.js"></script>
 </body>
 </html>
