@@ -1,0 +1,72 @@
+@use "./../../common/forwarded.scss" as f;
+
+.nav__list {
+  @include f.list-reset;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__item {
+  position: relative;
+
+  &:first-child {
+    margin-left: -16px;
+  }
+
+  &:last-child {
+    margin-right: -16px;
+  }
+}
+
+.nav__button {
+  @include f.link-reset;
+  @include f.use-raleway;
+  padding: 16px;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+
+  &--catalog {
+    padding-right: 58px;
+  }
+}
+
+.nav__button-toggle {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  width: 50px;
+  height: 50px;
+  border: 2px solid f.$color-text-first;
+  border-radius: 50%;
+  box-sizing: border-box;
+  transform: translateY(-50%);
+  opacity: 0.3;
+
+  &::before,
+  &::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: f.$color-text-first;
+    transform: translate(-50%, -50%);
+  }
+
+  &::before {
+    width: 24px;
+    height: 2px;
+  }
+
+  &::after {
+    width: 0;
+    height: 0;
+    transition: 300ms;
+  }
+}
+
+.nav__item--close .nav__button-toggle::after{
+  width: 2px;
+  height: 24px;
+}

@@ -12,9 +12,19 @@
 @mixin list-reset {
   list-style-type: none;
   padding-left: 0;
+  margin: 0;
 }
 
 @mixin link-reset {
   text-decoration: none;
   color: inherit;
+}
+
+@mixin use-raleway {
+  font-family: "Raleway", "Arial", sans-serif;
+  font-weight: 800;
+}
+
+@mixin use-Rubik {
+  font-family: "Rubik", "Arial", sans-serif;
 }

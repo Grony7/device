@@ -1,2 +1,1 @@
-console.log(123);
-console.log(124443);
+import './global/drop-menu.js'

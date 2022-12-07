@@ -1,0 +1,26 @@
+@use "./../../common/forwarded.scss" as f;
+
+.logo__link {
+  @include f.link-reset;
+  display: block;
+  outline: none;
+
+  &:focus {
+    outline: 2px solid f.$color-focus;
+  }
+
+  &:hover {
+    opacity: 0.6;
+    outline: none;
+  }
+
+  &:active {
+    opacity: 0.3;
+    outline: none;
+  }
+}
+
+.logo__image {
+  display: block;
+  object-fit: cover;
+}

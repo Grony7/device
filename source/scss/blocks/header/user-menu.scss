@@ -1,0 +1,58 @@
+@use "./../../common/forwarded.scss" as f;
+
+.user-menu__list {
+  @include f.list-reset;
+  display: flex;
+}
+
+.user-menu__item--entrance {
+  margin-right: auto;
+}
+
+.user-menu__link {
+  @include f.link-reset;
+  padding: 6px 10px;
+  display: block;
+  font-size: 18px;
+  line-height: 30px;
+  box-sizing: border-box;
+  outline: none;
+
+  &--entrance {
+    padding-left: 32px;
+    background-image: url("../image/icons/entrance.svg");
+    background-position: 6px 14px;
+    background-repeat: no-repeat;
+  }
+
+  &--comparison {
+    padding-left: 27px;
+    background-image: url("../image/icons/comparison.svg");
+    background-position: 6px 14px;
+    background-repeat: no-repeat;
+  }
+
+  &--cart {
+    padding-left: 34px;
+    background-image: url("../image/icons/cart.svg");
+    background-position: 6px 14px;
+    background-repeat: no-repeat;
+  }
+
+  &:focus {
+    outline: 2px solid f.$color-focus;
+  }
+
+  &:hover {
+    opacity: 0.6;
+    outline: none;
+  }
+
+  &:active {
+    opacity: 0.3;
+    outline: none;
+  }
+}
+
+
+

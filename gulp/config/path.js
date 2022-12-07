@@ -17,10 +17,10 @@ export const path = {
     style: `${sourceFolder}/scss/style.scss`,
     html: `${sourceFolder}/**/*.html`,
     files: [
+      `${sourceFolder}/**/*.*`,
       `!${sourceFolder}/**/*.html`,
-      `!${sourceFolder}/scss/style.scss`,
-      `!${sourceFolder}/scss/*.{jpg,png}`,
-      `${sourceFolder}/**/*.*`
+      `!${sourceFolder}/scss/**/*.scss`,
+      `!${sourceFolder}/image/*.{jpg,png}`,
     ],
   },
   watch: {
@@ -28,15 +28,14 @@ export const path = {
     style: `${sourceFolder}/**/*.scss`,
     html: `${sourceFolder}/**/*.html`,
     files: [
+      `${sourceFolder}/**/*.*`,
       `!${sourceFolder}/**/*.html`,
-      `!${sourceFolder}/scss/style.scss`,
-      `!${sourceFolder}/scss/*.{jpg,png}`,
-      `${sourceFolder}/**/*.*`
+      `!${sourceFolder}/**/*.scss`,
+      `!${sourceFolder}/image/*.{jpg,png}`,
     ],
   },
   clean: buildFolder,
   buildFolder: buildFolder,
   sourceFolder: sourceFolder,
   rootFolder: rootFolder,
-  ftp: ''
 }

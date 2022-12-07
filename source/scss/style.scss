@@ -1,1 +1,10 @@
+@use "./global";
+
+// header
+
 @use "blocks/header/main-header";
+@use "blocks/header/logo";
+@use "blocks/header/search";
+@use "blocks/header/user-menu";
+@use "blocks/header/nav";
+@use "blocks/header/drop-menu";

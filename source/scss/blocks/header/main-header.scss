@@ -1,6 +1,39 @@
 @use "../../common/forwarded" as f;
 
 .main-header {
-  margin-top: 40px;
+  width: 1160px;
+  margin: 40px auto 0 auto;
+  padding: 46px 60px 38px;
+  position: relative;
   background-color: f.$color-background-first;
+  box-sizing: border-box;
+
+  &--index {
+    min-height: 300px;
+    background-image: url("../image/background/01.svg");
+    background-repeat: no-repeat;
+    background-position: bottom -8px right 50px;
+  }
+}
+
+.main-header__logo {
+  position: absolute;
+  top: -21px;
+  left: 60px;
+  padding: 4px;
+}
+
+.main-header__wrapper {
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.main-header__search {
+  display: flex;
+}
+
+.main-header__user-menu {
+  margin-left: auto;
+  width: calc(100% - 530px);
 }
